@@ -1,0 +1,66 @@
+/*------STYLE GENERIQUE-------*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*---------FOOTER---------*/
+
+footer {
+    background-color: #4C86BD;
+}
+
+.footer-links ul li:before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #E53167;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+.footer-links,
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links h4 {
+    position: relative;
+}
+
+.footer-links h4:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #E53167;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-social {
+    border-top: 2px solid #fff;
+}
+
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #E53167;
+    color: #fff
+}
