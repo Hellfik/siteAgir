@@ -39,17 +39,26 @@ h2:after {
     left: 0;
 }
 
+h3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+h5 {
+    color: #4C86BD;
+}
+
 p {
-    color: #838383;
+    color: #000;
 }
 
 
 /*---------HEADER---------*/
 
 .navbar-expand-lg {
-    background-color: #fff;
+    background-color: #fff !important;
     padding: 10px !important;
-    /* box-shadow: 0px 0px 1px #4C86BD !important; */
+    /* box-shadow: 0px 0px 5px #000 !important; */
 }
 
 .navbar-brand {
@@ -89,7 +98,7 @@ p {
     left: 0;
     width: 50px;
     height: 50px;
-    background-color: #E53167;
+    background-color: rgb(229, 49, 103);
     color: #fff;
     z-index: 99
 }
@@ -98,23 +107,20 @@ p {
     position: relative;
     margin-top: 48px;
     min-height: calc(100vh - 48px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background: linear-gradient(#fff, #4C86BD); */
+    /* background-image: linear-gradient(to right, #4C86BD, #E53167); */
 }
 
-.startingScreen:before {
+
+/* .startingScreen:after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: auto;
+    height: 100px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-image: url('../images/wave.png');
-}
+} */
 
 .heading a {
     display: flex;
@@ -142,6 +148,7 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: baseline;
+    padding: 30px;
 }
 
 .about-us-numbers div {
@@ -172,6 +179,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .contact-infos h2 {
@@ -185,13 +193,101 @@ p {
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(76, 134, 189, 0.5);
 }
 
+.address p,
+.opening-hours p {
+    color: #fff
+}
+
 .opening-hours {
-    background-color: rgba(229, 49, 103, 0.5);
-    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
     margin-left: 150px;
+    background-color: rgba(229, 49, 103, 0.5);
+}
+
+#company-location,
+#company-form {
+    padding: 0;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 500px;
+    /* margin-bottom: 50px; */
+}
+
+.left-shape {
+    position: relative;
+    width: 600px;
+    height: 250px;
+    background-color: #4C86BD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-shape p {
+    color: #fff;
+}
+
+.left-shape:after {
+    content: '';
+    position: absolute;
+    border-left: 100px solid transparent;
+    border-bottom: 250px solid #fff;
+    right: 0;
+    top: 0;
+}
+
+.form form {
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid #4C86BD;
+    border-radius: 0;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 1px solid #E53167;
+}
+
+.form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: #E53167;
+    color: #fff;
+}
+
+
+/*---------TARIFS---------*/
+
+.tarif {
+    border-left: 2px solid #E53167;
 }
 
 

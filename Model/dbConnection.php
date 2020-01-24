@@ -1,10 +1,10 @@
 <?php
 
-class Manager
+class dbManager
 {
     protected function dbConnect()
     {
-        $db = new PDO('mysql:host=localhost;dbname=agir;charset=utf-8', 'root', '');
+        $db = new PDO('mysql:host=localhost;dbname=agir;charset=utf8', 'root', '');
         return $db;
     }
 }

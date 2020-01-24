@@ -3,17 +3,19 @@ $title = "Agir - Accueil";
  ?>
 
  <?php ob_start() ?>
-    <section class="container startingScreen">
-        <div class="heading">
-            <h1 class="mb-4">Association Intermediaire <br> A.G.I.R</h1>
-            <p class="mb-4">Une association près de chez <br>
-                vous pour 
-                répondre à tous vos besoins.
-            </p>
-            <a href="index.php?action=contact">Nous contacter</a>
-        </div>
-        <div class="heading-image">
-            <img src="public/images/img-accueil.png" alt="image accueil">
+    <section class="container-fluid startingScreen d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-around align-items-center">
+            <div class="heading">
+                <h1 class="mb-4">Association Intermediaire <br> A.G.I.R</h1>
+                <p class="mb-4">Une association près de chez <br>
+                    vous pour 
+                    répondre à tous vos besoins.
+                </p>
+                <a href="index.php?action=contact">Nous contacter</a>
+            </div>
+            <div class="heading-image">
+                <img src="public/images/img-accueil.png" alt="image accueil">
+            </div>
         </div>
     </section>
  <?php $startScreen = ob_get_clean(); ?>
@@ -23,7 +25,7 @@ $title = "Agir - Accueil";
     <section class="container" id="about-us">
         <div class="about-us-introduction">
             <div>
-                <h2>Qui sommes-nous?</h2>
+                <h2>Qui sommes-nous ?</h2>
                 <p>AGIR est une Association Intermédiaire, loi 1901, 
                    dont le projet social est de contribuer à l’insertion
                    et au retour à l’emploi. Elle est une Structure

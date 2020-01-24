@@ -10,3 +10,8 @@ if ($('.smart-scroll').length > 0) { // check if element exists
         last_scroll_top = scroll_top;
     });
 }
+
+let date = new Date();
+let year = date.getFullYear();
+let yearElt = document.getElementById("year-price");
+yearElt.innerHTML = year;

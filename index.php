@@ -7,6 +7,8 @@ try{
     if(isset($_GET['action'])){
         if($_GET['action'] == "contact"){
             contact();
+        }elseif($_GET['action'] = "tarifs"){
+            tarifs();
         }
     }else{
         home();
