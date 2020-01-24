@@ -26,7 +26,7 @@ h2 {
     font-size: 2em;
     color: #4C86BD;
     padding: 15px 0px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 h2:after {
@@ -131,6 +131,19 @@ p {
     border-radius: 40px;
     background-color: #E53167;
     color: #fff;
+}
+
+#scrollTop-btn {
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #E53167;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: all 1s ease-in-out; */
 }
 
 

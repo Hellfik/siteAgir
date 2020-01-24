@@ -7,8 +7,10 @@ try{
     if(isset($_GET['action'])){
         if($_GET['action'] == "contact"){
             contact();
-        }elseif($_GET['action'] = "tarifs"){
+        }elseif($_GET['action'] == "tarifs"){
             tarifs();
+        }elseif($_GET['action'] == 'nos-partenaires'){
+            partenaires();
         }
     }else{
         home();

@@ -30,21 +30,21 @@ $title = "Agir - Tarifs";
         <div class="tarifs-services row my-4">
             <div class="tarif-description d-flex align-items-center col-md-6">
                 <div>
-                    <h5><?= $data['intitule'] ?></h5>
+                    <h5><?= htmlspecialchars($data['intitule']) ?></h5>
                     <p><?= $data['description'] ?></p>
                 </div>
             </div>
             <div class="tarif d-flex align-items-center col-md-6">
-                <p class="p-5"><?= $data['prix'] ?> €/heure 
+                <p class="p-5"><?= htmlspecialchars($data['prix']) ?> €/heure 
                 <?php
-                    if($data['cesu'] === '1'){
+                    if(htmlspecialchars($data['cesu']) === '1'){
                         ?>*
                 <?php
                     }
                     ?>
                 <?php 
-                    if($data['is_deductible'] === '1'){
-                ?> (soit <?= $data['prix'] / 2 ?> €
+                    if(htmlspecialchars($data['is_deductible']) === '1'){
+                ?> (soit <?= htmlspecialchars($data['prix']) / 2 ?> €
                     après avantage fiscale) 
                 <?php
                 } 
@@ -54,6 +54,7 @@ $title = "Agir - Tarifs";
 
         <?php
             }
+            $prices->closeCursor();
         ?>
         <p>*si paiement CESU, 0.20cts supplémentaires par heure      </p>
     </div>

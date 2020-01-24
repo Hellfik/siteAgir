@@ -37,8 +37,8 @@
             <div class="fixed-social">
                 f
             </div>
-            <div class="scrollTop-btn">
-                <span style="color:#000;">&#708;</span>
+            <div id="scrollTop-btn" onclick="topFunction()">
+                
             </div>
             <?= $startScreen ?>
             <?= $content ?>
