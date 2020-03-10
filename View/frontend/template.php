@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <!-- META TAGS -->
         <meta charset="utf-8" />
@@ -7,7 +7,8 @@
         <title><?= $title ?></title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="public/css/font.css" type="text/css" rel="stylesheet"> <!--load all styles -->
-        <link href="public/css/style.css" type="text/css" rel="stylesheet" />
+        <link href="public/css/frontend.css" type="text/css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/499f7efc81.js" crossorigin="anonymous"></script>
     </head>
         
     <body>
@@ -21,10 +22,11 @@
                             </button>
                             <div class="collapse navbar-collapse" id="main_nav">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"> <a class="nav-link" href="index.php">Accueil</a> </li>
+                                    <li class="nav-item active"> <a class="nav-link" href="index.php"><i class="fa fa-home mr-1"></i>Accueil</a> </li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=particulier"> Particulier</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=professionnel"> Professionnel</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=demandeur-emploi"> Demandeur d'emploi</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index.php?action=offres"> Offres</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=tarifs"> Tarifs</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=nos-partenaires"> Nos partenaires</a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.php?action=contact"> Contact</a></li>
@@ -34,11 +36,11 @@
                         </div>
                     </nav>
             </header>
-            <div class="fixed-social">
-                f
-            </div>
+            <a class="fixed-social" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
             <div id="scrollTop-btn" onclick="topFunction()">
-                
+                <i class="fa fa-chevron-up text-white"></i>
             </div>
             <?= $startScreen ?>
             <?= $content ?>
@@ -52,6 +54,7 @@
                                 <li><a href="index.php?action=particulier">Particulier</a></li>
                                 <li><a href="index.php?action=professionnel">Professionnel</a></li>
                                 <li><a href="index.php?action=demandeur-emploi">Demandeur d'emploi</a></li>
+                                <li><a href="index.php?action=offres">Offres</a></li>
                                 <li><a href="index.php?action=tarifs">Tarifs</a></li>
                                 <li><a href="index.php?action=nos-partenaires">Partenaires</a></li>
                             </ul>
@@ -70,7 +73,8 @@
                                Etaples-sur-mer</p>
                         </div>
                     </div>
-                    <div class="footer-social d-flex justify-content-end">
+                    <div class="footer-social d-flex justify-content-between">
+                        <p class="m-3 text-white"><em>Designed & Developed By Fayeulle Mickael</em></p>
                         <a class="m-3" href="#">f</a>
                     </div>
 

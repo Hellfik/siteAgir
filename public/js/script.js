@@ -19,8 +19,9 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scroll_top_btn.style.display = "block";
-        scroll_top_btn.style.transition = "display 1s ease-in-out";
+        scroll_top_btn.style.display = "flex";
+        scroll_top_btn.style.justifyContent = "center";
+        scroll_top_btn.style.alignItems = "center";
     } else {
         scroll_top_btn.style.display = "none";
     }

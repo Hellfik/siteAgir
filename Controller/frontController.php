@@ -22,3 +22,23 @@ function partenaires(){
     $partners = $partnerManager->getPartner();
     require('./View/frontend/partenaires.php');
 }
+
+function demandeur(){
+    require('./View/frontend/demandeur.php');
+}
+
+function particuliers(){
+    require('./View/frontend/particuliers.php');
+}
+
+function offres(){
+    require('./View/frontend/offres.php');
+}
+
+function login(){
+    require('./View/backend/login.php');
+}
+
+function dashboard(){
+    require('./View/backend/dashboard.php');
+}

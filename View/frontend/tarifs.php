@@ -3,7 +3,7 @@ $title = "Agir - Tarifs";
 ?>
 
 <?php ob_start()?>
-    <div class="container-fluid startingScreen d-flex justify-content-between align-items-center">
+    <!--<div class="container-fluid startingScreen d-flex justify-content-between align-items-center">
             <div class="container d-flex justify-content-around align-items-center">
                 <div class="heading">
                     <h1 class="mb-4">Tarifs</h1>
@@ -17,13 +17,36 @@ $title = "Agir - Tarifs";
                     <img src="public/images/wallet.png" alt="tarifs image">
                 </div>
             </div>
+    </div>-->
+    <div class="container-fluid offerScreen px-0">
+        <div class="jumbotron tarifs-jumbotron p-0 m-0">
+            <h1><em>Tarifs</em></h1>
+        </div>
     </div>
 <?php $startScreen = ob_get_clean() ?>
 
 <?php ob_start()?>
-<section class="container my-5" id="company-tarifs">
+<section class="site-path">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-center">
+                <p><em><a href="index.php">Accueil</a> / <strong>Tarifs</strong></em></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container mb-5" id="company-tarifs">
     <div>
-        <h2>Nos tarifs</h2>
+        <div class="titleh2">
+            <h2>Nos tarifs</h2>
+        </div>
+        <div class="tarifs-introduction text-center">
+            <p class="mb-5">
+            Vous trouverez ici nos tarifs
+                        applicables à partir du <br>
+                        1<sup>er</sup> janvier <span id="year-price"></span>
+            </p>
+        </div>
         <?php 
             while($data = $prices->fetch()){
         ?>       
@@ -35,7 +58,7 @@ $title = "Agir - Tarifs";
                 </div>
             </div>
             <div class="tarif d-flex align-items-center col-md-6">
-                <p class="p-5"><?= htmlspecialchars($data['prix']) ?> €/heure 
+                <p class="p-5 prices"><?= htmlspecialchars($data['prix']) ?> €/heure 
                 <?php
                     if(htmlspecialchars($data['cesu']) === '1'){
                         ?>*

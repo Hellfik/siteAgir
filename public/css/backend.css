@@ -1,0 +1,182 @@
+/*------STYLE GENERIQUE-------*/
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+:root {
+    --main-green: #27db03;
+    --main-navy-blue: #080e7a;
+    --main-turquoise: #4c86bd;
+    --main-orange: #fd9b04;
+    --main-font-familly: "Nunito", cursive;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--main-font-familly);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    position: relative;
+    font-size: 2em;
+    color: #4C86BD;
+    padding: 15px 0px;
+    margin-bottom: 50px;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #E53167;
+    bottom: 0;
+    left: 0;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+h5 {
+    color: #4C86BD;
+}
+
+p {
+    color: #000;
+}
+
+
+/******LOGIN PAGE ********/
+
+h1 span {
+    color: #4C86BD;
+}
+
+.login-container {
+    background: rgb(37, 38, 44);
+    min-height: 100vh;
+}
+
+.login-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4C86BD;
+    clip-path: polygon(100% 0, 75% 100%, 100% 100%);
+    z-index: 2;
+}
+
+.login-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4C86BD;
+    clip-path: polygon(0 0, 25% 0, 0 100%, 0% 100%);
+    z-index: 2;
+}
+
+.login-form {
+    width: 500px;
+    z-index: 99;
+}
+
+.login-form label {
+    color: #fff;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4C86BD;
+    color: #fff;
+}
+
+.form-links {
+    color: #4C86BD;
+}
+
+.form-links:hover {
+    color: rgb(58, 102, 143);
+}
+
+
+/******DASHBOARD PAGE *******/
+
+.sidenav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #272c33;
+    padding: 20px 25px;
+    transition: 0.5s;
+}
+
+.sidenav-title {
+    text-align: center;
+    border-bottom: 1px solid #4C86BD;
+    padding: 20px 0;
+}
+
+.sidenav-title h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.closebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #E53167;
+    top: 25px;
+    right: -25px;
+    border-radius: 50%;
+}
+
+.closebtn .far {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sidenav h3 {
+    padding: 20px 0;
+    border-bottom: 1px solid #4C86BD;
+}
+
+.sidenav li {
+    padding: 20px 0;
+}
+
+.sidenav a {
+    color: #fff;
+}
+
+.sidenav .fas,
+.sidenav .fab {
+    width: 50px;
+}

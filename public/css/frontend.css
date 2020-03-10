@@ -1,0 +1,733 @@
+/*------STYLE GENERIQUE-------*/
+
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta&display=swap');
+:root {
+    --main-green: #27db03;
+    --main-navy-blue: #080e7a;
+    --main-turquoise: #4c86bd;
+    --main-orange: #fd9b04;
+    --main-font-familly: "Nunito", cursive;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--main-font-familly);
+}
+
+body {
+    background-color: #eee;
+}
+
+
+/* body {
+    background-image: url('../images/memphis-colorful.png');
+} */
+
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--main-navy-blue);
+}
+
+h2 {
+    position: relative;
+    font-size: 2em;
+    color: var(--main-navy-blue);
+    padding: 15px 0px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-orange);
+    bottom: 0;
+    left: 0;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+h5 {
+    color: var(--main-navy-blue);
+}
+
+p {
+    color: #000;
+}
+
+
+/*---------HEADER---------*/
+
+.navbar-expand-lg {
+    background-color: #eee !important;
+    padding: 10px !important;
+    /* box-shadow: 0px 0px 5px #000 !important; */
+}
+
+.navbar-brand {
+    color: var(--main-navy-blue) !important;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.navbar-brand img {
+    display: inline-block;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.scrolled-down {
+    /* transform: translateY(-100%); */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: var(--main-navy-blue) !important;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: right;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: var(--main-orange);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--main-orange) !important;
+}
+
+.nav-link:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+/*----------START SCREEN---------*/
+
+.fixed-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-orange);
+    color: #fff;
+    z-index: 99
+}
+
+.startingScreen {
+    position: relative;
+    margin-top: 48px;
+    min-height: calc(100vh - 48px);
+    /* background-image: linear-gradient(to right, var(--main-navy-blue), var(--main-orange)); */
+}
+
+.heading a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    /* border-radius: 40px; */
+    background-color: var(--main-orange);
+    color: var(--main-navy-blue);
+    box-shadow: 0px 0px 10px var(--main-orange);
+    transition: 0.3s;
+}
+
+.heading a:hover {
+    background-color: var(--main-navy-blue);
+    box-shadow: 0px 0px 10px var(--main-navy-blue);
+    color: var(--main-orange);
+}
+
+#scrollTop-btn {
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-orange);
+    box-shadow: 0px 0px 10px var(--main-orange);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#scrollTop-btn:hover {
+    transform: scale(1.2);
+}
+
+.site-path .row {
+    padding: 20px;
+}
+
+
+/*---------HOME PAGE CONTENT------------*/
+
+.titleh2 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.titleh2 h2:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: var(--main-orange);
+    bottom: 0;
+    margin: -20px 0;
+    left: calc(50% - 50px);
+}
+
+.about-us-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+}
+
+.homepage-img {
+    width: 500px;
+    height: auto;
+}
+
+.about-us-numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 30px;
+}
+
+.about-us-numbers div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-orange);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0 25%);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--main-navy-blue);
+    font-weight: 600;
+}
+
+.number:hover {
+    transition: .7s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.engagements ul li {
+    display: flex;
+    margin-left: 10px;
+}
+
+.engagements ul li:before {
+    display: block;
+    content: "\2714";
+    margin-right: 10px;
+    color: var(--main-orange);
+    font-size: 20px;
+}
+
+
+/*---------PARTENAIRES---------*/
+
+.partners-jumbotron {
+    background-image: url('../images/partners.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+
+/*---------CONTACT--------*/
+
+.contact-jumbotron {
+    background-image: url('../images/contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+#company-infos {
+    padding-bottom: 100px;
+}
+
+.contact-infos h2 {
+    margin-bottom: 100px;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-navy-blue);
+}
+
+.address h5 {
+    color: var(--main-orange)
+}
+
+.address p,
+.opening-hours p {
+    color: #fff
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-left: 150px;
+    background-color: var(--main-orange);
+}
+
+.contactpage-img {
+    width: 400px;
+    height: auto;
+}
+
+#company-location,
+#company-form {
+    padding: 0;
+}
+
+.google-map {
+    margin-bottom: -7px;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 500px;
+    /* margin-bottom: 50px; */
+}
+
+.form {
+    z-index: 1;
+}
+
+.form form {
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0 4px 44px rgba(17, 29, 48, .06);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 1px solid var(--main-navy-blue);
+    padding: 15px;
+    border-radius: 0;
+    background: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.form form input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.438) !important;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 1px solid var(--main-orange);
+    background: transparent;
+}
+
+.form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    /* border-radius: 40px; */
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+
+/*---------DEMANDEUR D'EMPLOI -------*/
+
+.demandeurs-jumbotron {
+    background-image: url('../images/hand-shake.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    padding: 5px;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background-color: var(--main-orange);
+    box-shadow: -5px 10px 20px #fd990480;
+    color: var(--main-navy-blue);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.conditions-img {
+    position: relative;
+}
+
+.company-requirements h6 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.company-requirements ul li {
+    display: flex;
+}
+
+.company-requirements ul li:before {
+    display: block;
+    content: "\2714";
+    margin-right: 10px;
+    color: var(--main-orange);
+    font-size: 20px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+}
+
+.separator div {
+    width: 100px;
+    height: 5px;
+    background-color: var(--main-orange);
+}
+
+.btn-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    /* border-radius: 40px; */
+    background-color: var(--main-orange);
+    color: var(--main-navy-blue);
+}
+
+
+/*---------TARIFS---------*/
+
+.tarifs-jumbotron {
+    background-image: url('../images/prices.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+.tarif {
+    border-left: 2px solid var(--main-orange);
+}
+
+.prices {
+    color: var(--main-orange);
+    font-weight: 800;
+}
+
+
+/*--------OFFRES----------*/
+
+.offerScreen {
+    position: relative;
+    margin-top: 105px;
+}
+
+.offerScreen h1 {
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.offer-jumbotron {
+    background-image: url('../images/carreer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer {
+    border-bottom: 1px solid var(--main-navy-blue);
+    padding: 20px;
+}
+
+.offer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    background-color: var(--main-orange);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+/*---------PARTICULIERS---------*/
+
+.services {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 44px rgba(17, 29, 48, .06);
+    margin: 20px 0;
+    /* border-radius: 10px; */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+}
+
+.particuliers-jumbotron {
+    background-image: url('../images/agir-pic1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px !important;
+    border-radius: 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-gallery {
+    position: relative;
+}
+
+.img-container {
+    width: 300px;
+    height: 225px;
+    margin: 0px 20px 70px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-description {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 30px;
+    left: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.img-description p {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.to_show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.img-container:hover .to_show {
+    opacity: 1;
+}
+
+
+/*---------FOOTER---------*/
+
+footer {
+    background-color: var(--main-navy-blue);
+}
+
+.footer-links ul li:before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--main-orange);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+.footer-links,
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links h4 {
+    position: relative;
+}
+
+.footer-links h4:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-orange);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-links .adresse p {
+    color: #fff;
+}
+
+.footer-social {
+    border-top: 2px solid #fff;
+}
+
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--main-orange);
+    color: #fff
+}
+
+
+/*------CUSTOM SCROLL BAR--------*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    /* border-radius: 10px; */
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--main-orange);
+    /* border-radius: 10px; */
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-orange);
+}
+
+
+/******RESPONSIVE********/
