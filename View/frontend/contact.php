@@ -48,7 +48,7 @@ $title = "Agir - Contact";
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <img class="contactpage-img" src="public/images/location.png" alt="">
+                    <img class="contactpage-img" src="public/images/contact-image.svg" alt="">
                 </div>
         
         </div>

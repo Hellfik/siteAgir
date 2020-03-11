@@ -67,7 +67,7 @@ $title = "Agir - demandeur d'emploi";
                     </div>
                     <div class="company-requirements text-right">
                         <h6>Inscription</h6>
-                        <p>Pour toute inscription, veuillez déposer tous les documents cités ci-dessous en nos locaux.</p>
+                        <p>Pour toute inscription, veuillez déposer tous les documents cités ci-dessous au secrétariat d'AGIR.</p>
 
                         <p>Suite à ce premier contact, un rendez-vous vous sera donné avec un CIP (Conseiller
                            en Insertion Professionnel) du service accompagnant socio-professionnel d'AGIR.</p>
@@ -107,6 +107,33 @@ $title = "Agir - demandeur d'emploi";
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="about-us-engagements py-5  container">
+            <div class="titleh2">
+                <h2>Nos engagements envers les demandeurs d'emplois</h2>
+            </div>
+            <div class="engagements">
+                <ul>
+                    <div class="row">
+                        <div class="col-6">
+                            <li>Proposer des missions de Mise à Disposition rémunérées.</li><br>
+                            <li>Accompagner et conseiller lors de vos mises à disposition.</li><br>
+                            <li>Vous fournir les documents administratifs nécessaires 
+                                (contrats de travail, fiches de suivi d’heures, fiches de paie, attestation Pôle Emploi).</li><br>
+                            <li>Vous accueillir, vous orienter et accompagner pour un retour à l’emploi durable. </li><br>
+                            <li>Vous accompagner dans la définition d’un projet professionnel stable et réalisable.</li><br>
+                        </div>
+                        <div class="col-6">
+                            <li>Etablir un suivi socio- professionnel après un mois de Mise à Disposition.</li><br>
+                            <li>Accompagner dans vos démarches de recherche d'emploi</li><br>
+                            <li>Vous orienter vers des partenaires référents en fonction de vos 
+                                    problématiques sociales.</li><br>
+                            <li>Vous orienter vers l’E.I. F : (Espace Information Formation) ainsi que 
+        vers les centres de formations.</li>
+                        </div>
+                    </div>
+                </ul>
             </div>
         </div>
         <div class="row my-5">

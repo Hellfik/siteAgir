@@ -29,7 +29,7 @@ $title = "Agir - Particuliers";
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 d-flex justify-content-center text-center align-items-center">
-                <p>Agir met à disposition de ses clients, des salariés afin de répondre à tous vos besoins, qu'ils soient ponctuels ou réguliers, dans trois secteurs d'activités différents</p>
+                <p>Agir met à disposition chez ses clients, des salariés afin de répondre à tous vos besoins, qu'ils soient ponctuels ou réguliers, dans trois secteurs d'activités différents</p>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -48,8 +48,10 @@ $title = "Agir - Particuliers";
                     <ul>
                         <li>Travaux ménagers</li>
                         <li>Entretien du linge</li>
+                        <li>Repassage</li>
                         <li>Rangements divers</li>
-                        <li>Préparation des repas à domicile, courses</li>
+                        <li>Préparation des repas à domicile</li>
+                        <li>Courses</li>
                         <li>Garde d'enfants de plus de 3 ans</li>
                     </ul>
                 </div>
@@ -67,11 +69,14 @@ $title = "Agir - Particuliers";
                 </div>
                 <div class="text-center mt-4">
                     <ul>
-                        <li>Tailles de haies, arbustes, fruitiers</li>
+                        <li>Tailles de haies,</li>
+                        <li>Arbustes,</li>
+                        <li>Fruitiers,</li>
                         <li>Tontes</li>
                         <li>Débroussaillage</li>
-                        <li>Entretien terrasse, gouttières</li>
-                        <li>Désherbage manuel, bêchage</li>
+                        <li>Entretien terrasses, gouttières</li>
+                        <li>Désherbage manuel</li>
+                        <li>Bêchage</li>
                         <li>Travaux du potager</li>
                     </ul>
                 </div>
@@ -91,8 +96,10 @@ $title = "Agir - Particuliers";
                     <ul>
                         <li>Petite maçonnerie</li>
                         <li>Carrelage</li>
-                        <li>Peinture, papier peint</li>
+                        <li>Peinture</li>
+                        <li>Papier peint</li>
                         <li>Aide aux déménagements</li>
+                        <li>Désemcombrements</li>
                     </ul>
                 </div>
             </div>

@@ -13,40 +13,41 @@
         
     <body>
         <div class="container-fluid p-0">
-            <header>
-                    <nav class="navbar fixed-top smart-scroll navbar-expand-lg navbar-light">
-                        <div class="container">
-                            <a class="navbar-brand d-flex align-items-center" href="index.php"> <img src="public/images/logo_agir.png" style="width:75px; height:75px;" alt=""> A.G.I.R </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="main_nav">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"> <a class="nav-link" href="index.php"><i class="fa fa-home mr-1"></i>Accueil</a> </li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=particulier"> Particulier</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=professionnel"> Professionnel</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=demandeur-emploi"> Demandeur d'emploi</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=offres"> Offres</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=tarifs"> Tarifs</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=nos-partenaires"> Nos partenaires</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="index.php?action=contact"> Contact</a></li>
-                                </ul>
-                                
-                            </div> <!-- navbar-collapse.// -->
-                        </div>
-                    </nav>
-            </header>
-            <a class="fixed-social" href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <div id="scrollTop-btn" onclick="topFunction()">
-                <i class="fa fa-chevron-up text-white"></i>
-            </div>
-            <?= $startScreen ?>
-            <?= $content ?>
+                <header>
+                        <nav class="navbar fixed-top smart-scroll navbar-expand-lg navbar-light">
+                            <div class="container">
+                                <a class="navbar-brand d-flex align-items-center" href="index.php"> <img src="public/images/logo_agir.png" style="width:75px; height:75px;" alt=""> A.G.I.R </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="main_nav">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active"> <a class="nav-link" href="index.php">Accueil</a> </li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=particulier">Particulier</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=professionnel">Professionnel</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=demandeur-emploi">Demandeur d'emploi</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=offres">Offres</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=tarifs">Tarifs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=nos-partenaires">Partenaires</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Dressing solidaire</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.php?action=contact">Contact</a></li>
+                                    </ul>
+                                    
+                                </div> <!-- navbar-collapse.// -->
+                            </div>
+                        </nav>
+                </header>
+                <a class="fixed-social" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <div id="scrollTop-btn" onclick="topFunction()">
+                    <i class="fa fa-chevron-up text-white"></i>
+                </div>
+                <?= $startScreen ?>
+                <?= $content ?>
             <footer>
                 <div class="container p-3">
-                    <div class="footer-links row py-4">
+                    <div class="footer-links row d-flex justify-content-around py-4">
                         <div class="links-site col-md-4 px-auto">
                             <h4 class="mb-3 py-2">Plan du site</h4>
                             <ul>
@@ -63,8 +64,9 @@
                              <h4 class="mb-3 py-2">Pratique</h4>
                              <ul>
                                  <li><a href="index.php?action=mention-legales">Mentions legales</a></li>
-                                 <li><a href="index.php?action=contact">Contact</a></li> 
+                                 <li><a href="index.php?action=contact">Contact</a></li>
                              </ul>
+                             <img src="public/images/ess62.png" width="250px" height="auto" alt="logo ess 62">
                          </div>
                         <div class="adresse col-md-4">
                             <h4 class="mb-3 py-2">Adresse</h4>

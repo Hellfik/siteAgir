@@ -10,7 +10,7 @@ $title = "Agir - offres";
         </div>
     </div>
 
-<?php $startScreen = ob_get_clean();?> 
+<?php $startScreen = ob_get_clean();?>
     
 <?php ob_start() ?>
 <section class="site-path">
@@ -25,21 +25,24 @@ $title = "Agir - offres";
     <div class="container mb-5">
         <div class="row">
             <div class="col-md-8">
+            <?php
+                while($data = $offers->fetch()){
+            ?>
                 <div class="offer">
-                    <h2 class="mb-1">Maçon (H/F)</h2>
-                    <p><sub>Par Admin, le 03 mars 2020 à 12h00 </sub> <span class="badge badge-warning">Offre</span></p>
-                    
-                    <p>Rattaché(e) au responsable du restaurant, vous aurez en charge de la lecture des plans, de la préparation du chantier (outillage,
-                        matériaux, sécurisations des abords), de la pose du coffrage et coulage de béton ...</p>
-                    <p>Cet emploi nécessite de la rigueur et du professionnalisme.</p>
+                    <h2 class="mb-1"><?= htmlSpecialChars($data['intitule']) ?></h2>
+                    <p><sub>Posté le <?= $data['date']?> </sub> <span class="badge badge-warning">Offre</span></p>
+                    <?= $data['resume'] ?>
                     <a href="#" class="offer-btn" data-toggle="modal" data-target="#exampleModalCenter">En savoir plus</a>
                 </div>
+                <?php
+                    }
+                ?>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Maçon (H/F)</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle"><?= htmlSpecialChars($data['intitule']) ?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>

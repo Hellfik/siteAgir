@@ -169,13 +169,11 @@ p {
     /* border-radius: 40px; */
     background-color: var(--main-orange);
     color: var(--main-navy-blue);
-    box-shadow: 0px 0px 10px var(--main-orange);
     transition: 0.3s;
 }
 
 .heading a:hover {
     background-color: var(--main-navy-blue);
-    box-shadow: 0px 0px 10px var(--main-navy-blue);
     color: var(--main-orange);
 }
 
@@ -224,11 +222,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .homepage-img {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
@@ -362,7 +360,6 @@ p {
 .google-map iframe {
     width: 100%;
     height: 500px;
-    /* margin-bottom: 50px; */
 }
 
 .form {
@@ -406,7 +403,6 @@ textarea::placeholder {
     width: 150px;
     height: 50px;
     border: none;
-    /* border-radius: 40px; */
     background-color: var(--main-orange);
     color: #fff;
 }
@@ -479,7 +475,6 @@ textarea::placeholder {
     width: 150px;
     height: 50px;
     border: none;
-    /* border-radius: 40px; */
     background-color: var(--main-orange);
     color: var(--main-navy-blue);
 }
@@ -501,7 +496,7 @@ textarea::placeholder {
 }
 
 .prices {
-    color: var(--main-orange);
+    color: #000;
     font-weight: 800;
 }
 
